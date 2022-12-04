@@ -82,7 +82,7 @@ class Document extends Permission {
   }
 
   process() {
-    switch (this.check()) {
+    switch (super.check()) {
       case true:
         console.log("Allowed");
         break;
